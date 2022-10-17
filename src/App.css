@@ -52,7 +52,7 @@ body {
     padding-left: 30px;
     margin-top: 20px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 
 .nav a::after {

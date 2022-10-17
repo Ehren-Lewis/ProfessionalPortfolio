@@ -2,8 +2,8 @@ import React from "react";
 
 const Projects = () => {
     return(
-        <div id="projects" style={{marginTop: "300px"}}>
-        <div className="row justify-content-end project-title-container mb-5">
+        <div id="projects" style={{marginTop: "150px"}}>
+        <div className="row justify-content-center project-title-container mb-5">
             <div className="col-5">
                 <p className="name text-light">My Projects</p>
             </div>
@@ -11,8 +11,7 @@ const Projects = () => {
 
         <div className="row text-light mb-5 d-flex flex-wrap">
             <div className="col-lg-7 mx-auto col-xl-4 order-2">
-                {/* <img src="./assets/images/hobbySpotLanding.png"style="width: 400px; height:300px;" /> */}
-                <img src={require("../images/hobbySpotLanding.png")} style="width: 400px; height:300px;" />
+                <img src={require("../images/hobbySpotLanding.png")} style={{width: "400px", height:"300px"}} alt="Landing page of Hobby Spot" />
             </div>
 
                 <div className="col-lg-12 col-xl-6 order-1 mx-auto">
@@ -32,8 +31,7 @@ const Projects = () => {
 
         <div className="row text-light mb-5 d-flex">
             <div className="col-lg-7 mx-auto col-xl-4 order-2">
-                {/* <img src="./assets/images/scrapingResults.png" width="400px" height="300px" /> */}
-                <im src={require("../images/scrapingResults.png")} alt="The results of the dune web scraper" width="400px" height="300px" />
+                <img src={require("../images/scrapingResults.png")} alt="The results of the dune web scraper" width="400px" height="300px" />
             </div>
 
             <div className="col-lg-12 col-xl-6 order-1 mx-auto">
@@ -47,8 +45,7 @@ const Projects = () => {
 
         <div className="row text-light mb-5">
             <div className="col-lg-7 mx-auto col-xl-4 order-2">
-                {/* <img src="./assets/images/tkinterBookshelf.png"  style="width: 400px; height:300px;" /> */}
-                <img src={require("../images/tkinterBookshelf.png" )}  style="width: 400px; height:300px;" />
+                <img src={require("../images/tkinterBookshelf.png" )}  style={{width: "400px", height:"300px"}} alt="Landing page of the bookshelf"/>
             </div>
 
             <div className="col-lg-12 col-xl-6 order-1 mx-auto">

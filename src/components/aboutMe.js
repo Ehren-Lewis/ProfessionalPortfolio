@@ -40,10 +40,7 @@ const AboutMe = () => {
                         </div>
                     </div>
                     <div className="col-lg-12 col-xl-6 d-flex justify-content-center">
-                        {/* <img src="/assets/images/portraitPhotoTransparent.png" width="300px" height="304px"> */}
-                        {/* <img src="../../assets/images/portaitPhotoTransparent.png" width="300px" height="304px" /> */}
-                        {/* <img src={portaitPhotoTransparent} />   */}
-                        <img src={require("../images/portraitPhotoTransparent.png")} alt="Myself with a transparent background"/>
+                        <img src={require("../images/portraitPhotoTransparent.png")} alt="Myself with a transparent background" />
                     </div>
                 </div>
             </div>
