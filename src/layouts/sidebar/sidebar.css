@@ -1,0 +1,41 @@
+
+:root {
+    --cyber-dark-blue: #092047;
+    --cyber-light-blue: #0b468c;
+    --cyber-grey: #a2a5ad;
+    --cyber-pink: #ac61b9;
+    --cyber-purple: #63345e;
+    --cyberpunk-pink: #F000DB; 
+    --cyberpunk-purple: #621882; 
+    --cyberpunk-purple-test: #14031b; 
+    --cyberpunk-blue: #133DC9; 
+    --cyberpunk-dark-blue: #0A172D; 
+    --cyberpunk-black: #061024; 
+
+    --cyberpunk-teal: #0BC4CF; 
+}
+
+.nav-bar {
+    background-color: #092047;
+    /* background: black; */
+    width: 60px;
+    height: 100%;
+    position: fixed;
+    /* top: 0; */
+    bottom: 0;
+    min-height: 500px;
+    z-index: -2;
+}
+
+
+.logo {
+    display: block;
+    padding: 8px 0;
+}
+
+img {
+    display: block;
+    margin: 8px auto;
+    width: 24px;
+    height: auto
+}

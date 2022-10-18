@@ -5,7 +5,7 @@ import AboutMe from './components/aboutMe';
 import Footer from './layouts/footer';
 import Projects from './components/projects';
 import  EhrenResume from "./images/EhrenLewisResume.pdf"
-
+import Sidebar from './layouts/sidebar/sidebarindex';
 
 import {
   BrowserRouter,
@@ -16,28 +16,26 @@ import {
 
 function App() {
   return (
+    <>
+          <Sidebar />
+
       <div className='container'>
-      {/* <Header /> */}
-      <BrowserRouter>
       <nav className="nav">
-            <Link className="cyber-grey" to="/">About Me</Link>
-            <Link className="cyber-grey" to="/projects" >Projects</Link>
+
+            <a href="#about" className="cyber-grey">About Me</a>
+            <a href="#projects" className='cyber-grey'>Projects</a>
             <a className="cyber-grey" href="mailto:ehrenlewis0@gmail.com">Contact Me</a>
             <a className="cyber-grey" href={EhrenResume} download>Resume </a>
       </nav>
-
-
       <div>
-          <Routes>
-            <Route exact path="/"  element={<AboutMe />} />
-            <Route exact path="/projects"  element={<Projects />} /> 
-          </Routes>
+        <AboutMe id="about" />
+        <Projects id="projects"/>
       </div>
 
-      </BrowserRouter>
       
       <Footer />
     </div>
+    </>
 
   );
 }

@@ -1,14 +1,38 @@
-import React from "react";
+import React, { useState} from "react";
+import TypeIt from "typeit-react"
+
 // import portaitPhotoTransparent from "../images/portaitPhotoTransparent.png";
+import "./aboutMeStyle.css"
 const AboutMe = () => {
+
+    // const [instance, setInstance] = useState(null);
+
     return(
+
+
         <>
             <div className="snippet" style={{marginTop: "150px"}}>
                 <h1 className="greeting cyber-grey text-light">Hello, I am </h1>
                 <p className="name text-light">Ehren Lewis</p>
-                <p className="cyber-grey text-light">Fullstack Software Developer</p>
-                <p className="description text-light">&emsp;&emsp;I am currently a student
-                    in the University of Denver Fullstack Software Developer
+                <div className="typewriter">
+                {/* <h2 className="cyber-grey text-light">Fullstack Software Developer</h2> */}
+                {/* <TypeIt className="cyber-grey text-light" element={"h2"}>Fullstack Software Developer</TypeIt> */}
+
+                <TypeIt className="cyber-grey text-light" element={"h2"} style={{fontSize: "3rem"}}
+                    getBeforeInit={(instance) => {
+                        instance
+                        .type("Fullstack Software Developer")
+                        .pause("1000")
+                        .delete(28)
+                        .pause(500)
+                        .type("Life-long learner");
+
+                    return instance
+                    }} />
+
+
+                </div>
+                <p className="description text-light">&emsp;&emsp; Fullstack Software Developer
                     Coding Bootcamp. I live in Fort Worth, Texas. I currently
                     have experience with Pyhon, Django, Tkinter, HTML, CSS, Bootstrap, and JavaScript,
                 </p>
