@@ -45,14 +45,34 @@
     text-decoration: inherit;
     color: var(--cyber-grey);
     width: fit-content;
-    transform-origin: 0 ;
-    transform: rotate(90deg);
-    padding-bottom: 10px;
-
+    position: relative;
+    top: -30px;
+    transform-origin: 0;
+    /* transform-origin: left center; */
+    transform: rotate(90deg);   
+    padding-bottom: 40px;
 }
 
 .email:hover {
-    color: #ced1d7;
-    transition: .4s;
-   
+    color: var(--earthy-orange);
+    transition: .4s;  
+}
+
+
+.sidebar-logo {
+    color: var(--cyber-grey);
+    transition: all .4s ease-in-out;
+}
+
+.sidebar-logo:hover {
+    color: var(--earthy-orange);
+
+    transform: translate(0px, -7px);
+}
+
+.sidebar-logo::after {
+    background: var(--cyber-grey);
+    content: "";
+    height: 3px;
+    width: 1px
 }

@@ -1,8 +1,12 @@
 import React from "react";
-import TypeIt from "typeit-react"
+import TypeIt from "typeit-react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "./aboutMeStyle.css"
+
+gsap.registerPlugin(ScrollTrigger);
 
 // import portaitPhotoTransparent from "../images/portaitPhotoTransparent.png";
-import "./aboutMeStyle.css"
 const AboutMe = () => {
 
     // const [instance, setInstance] = useState(null);
@@ -11,6 +15,7 @@ const AboutMe = () => {
 
 
         <>
+        <div className="background-wrapper">
            
             <h1 className="greeting cyber-grey text-light" style={{marginTop: "150px"}}>Hello, I am </h1>
 
@@ -36,11 +41,16 @@ const AboutMe = () => {
 
                 </div>
                 <p className="description text-light">&emsp;&emsp; I'm a software developer currently living in 
-                Fort Worth, Texas. I'm interestedin frontend, backend, and full stack opportunities,
+                Fort Worth, Texas. I'm interested in frontend, backend, and full stack opportunities,
                 and I can't wait to use my skills in a professional setting!
                 </p>
             </div>
 
+            </div>
+
+
+            <div id="smooth-wrapper">
+            <div id="smooth-content">
             <div className="about-section">
                 <div className="row" style={{marginTop: "200px"}} id="about">
                     <div className="col-5">
@@ -55,21 +65,23 @@ const AboutMe = () => {
                         </p>
 
                         <div className="row">
-                            <p className="text-light">&ensp;&ensp;My goal is to enter the industry as a web developer focusing on
-                                frontend sofware development
+                            <p className="text-light">&ensp;&ensp;My goal is to enter the industry as a web developer, regardless of frontend, backend
+                            or full stack position.
                             </p>
 
                             </div>
                         <div className="row">
-                        <p className="text-light">I'm excited to use my knowledge in <span className="cyberpunk-pink">JavaScript</span>, <span className="cyberpunk-pink">JQuery</span>, <span className="cyberpunk-teal">HTML/CSS</span>,
-                            <span className="cyberpunk-teal">React</span>, and <span className="cyber-grey">Node.js</span> (just to name a few technologies I know), to help any company
-                            provide the most relevant and up to date technology we all desire!</p>
+                        <p className="text-light">Outside of software development, I'm a classically trained musician. I played the violin for 7 years
+                         and I have performed along the Fort Worth Symphony Orchestra with the Fort Worth Youth Orchestra. I now play the piano,
+                         but regardless of the instrument I play, I always love the challenge of understanding what it takes to master a skill! </p>
                         </div>
                     </div>
                     <div className="col-lg-12 col-xl-6 d-flex justify-content-center">
-                        {/* <img src={require("../images/portraitPhotoTransparent.png")} alt="Myself with a transparent background" /> */}
-                    </div>
+                        <img src={require("../images/portraitPhotoTransparent.png")} alt="Myself with a transparent background" width="300px" height="304px" className="img-border"/>
+                    </div> 
                 </div>
+            </div>
+            </div>
             </div>
         </>
     )

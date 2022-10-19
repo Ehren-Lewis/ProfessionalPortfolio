@@ -1,4 +1,26 @@
+:root {
+    --cyber-dark-blue: #092047;
+    --cyber-light-blue: #0b468c;
+    --cyber-grey: #a2a5ad;
+    --cyber-pink: #ac61b9;
+    --cyber-purple: #63345e;
+    --cyberpunk-pink: #F000DB; 
+    --cyberpunk-purple: #621882; 
+    --cyberpunk-purple-test: #14031b; 
+    --cyberpunk-blue: #133DC9; 
+    --cyberpunk-dark-blue: #0A172D; 
+    --cyberpunk-black: #061024; 
 
+    --cyberpunk-teal: #0BC4CF; 
+
+    
+    --earthy-grey: #8c9086;
+    --earthy-brown: #160c04;
+    --earthy-darkbrown: #0e0804;
+    --earthy-tan: #e6ceb5;
+    --earthy-orange: #c16632;
+    --earthy-blue: #5fc7474;
+}
 
 .typewriter h2 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -20,4 +42,26 @@
     from, to { border-color:  transparent}
     50% { border-color: grey;}
     
+}
+
+.img-border {
+    border: 2px solid var(--earthy-grey);
+    background-color: black;
+}
+
+.background-wrapper {
+    background: linear-gradient(
+        to right,
+        #160c04 0%,
+        #160c04 50%,
+        #0e0804 50%,
+        #0e0804 100%
+    );
+    /* background: linear-gradient(
+        to right,
+        pink 0%,
+        pink 50%,
+        paleturquoise 50%,
+        paleturquoise 100%
+      ); */
 }
