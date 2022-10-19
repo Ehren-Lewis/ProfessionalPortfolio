@@ -19,11 +19,20 @@
     --cyberpunk-black: #061024; 
 
     --cyberpunk-teal: #0BC4CF; 
+
+
+    --earthy-grey: #8c9086;
+    --earthy-brown: #160c04;
+    --earthy-darkbrown: #0e0804;
+    --earthy-tan: #e6ceb5;
+    --earthy-orange: #c16632;
+    --earthy-blue: #5fc7474;
+
 }
 
 
 /* Color Theme Swatches in Hex */
-.cyberpunk-pink{ color: #f14ee3; }
+/* .cyberpunk-pink{ color: #f14ee3; } */
 .cyberpunk-purple { color: #621882; }
 .cyberpunk-blue { color: #133DC9; }
 .cyberpunk-dark-blue { color: #0A172D; }
@@ -34,7 +43,7 @@
 
 
 body {
-    background-color: var(--cyberpunk-dark-blue);
+    background-color: var(--earthy-brown);
     overflow: overlay;
 }
 
@@ -60,7 +69,7 @@ body {
     display: block;
     width: 0;
     height: 1px;
-    background: var(--cyberpunk-teal);
+    background: var(--earthy-orange);
     transition: width .4s ease-in;          
   }
   
@@ -83,7 +92,7 @@ body {
     font-family: 'Cyberpunk Is Not Dead', sans-serif; 
     clip-path: polygon(20% 0, 70% 0%, 100% 0, 100% 84%, 85% 100%, 30% 100%, 0 100%, 0 20%);
     /* border: 1px solid teal; */
-    border: 1px solid var(--cyberpunk-teal);
+    border: 1px solid var(--earthy-orange);
     width:max-content;
     padding: .5rem 1rem;
     font-size: 3rem;
@@ -203,7 +212,7 @@ body {
 
 .project-name {
   font-family: 'Cyberpunk Is Not Dead', sans-serif; 
-  border-bottom: 1px solid var(--cyberpunk-teal);
+  border-bottom: 1px solid var(--earthy-orange);
   width:max-content;
   font-size: 2rem;
 }
@@ -229,11 +238,11 @@ body {
   display: contents;
   margin: 0;
   padding: 0;
-  color: var(--cyberpunk-teal)
+  color: var(--earthy-grey)
 }
 
 .links:hover {
-  color: var(--cyberpunk-blue)  
+  color: var(--earthy-tan)  
 }
 
 .test {
@@ -283,7 +292,7 @@ body {
 
 
 .footer {
-  background-color: var(--cyberpunk-black);
+  background-color: var(--earthy-darkbrown);
   position: absolute;
   /* font-size: 2rem; */
   left: 0;

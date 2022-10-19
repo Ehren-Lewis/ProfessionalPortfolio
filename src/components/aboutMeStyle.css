@@ -1,6 +1,6 @@
 
 
-.typewriter h2{
+.typewriter h2 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid grey; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */

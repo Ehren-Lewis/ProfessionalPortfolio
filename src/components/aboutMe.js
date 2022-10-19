@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React from "react";
 import TypeIt from "typeit-react"
 
 // import portaitPhotoTransparent from "../images/portaitPhotoTransparent.png";
@@ -11,30 +11,33 @@ const AboutMe = () => {
 
 
         <>
-            <div className="snippet" style={{marginTop: "150px"}}>
-                <h1 className="greeting cyber-grey text-light">Hello, I am </h1>
-                <p className="name text-light">Ehren Lewis</p>
+           
+            <h1 className="greeting cyber-grey text-light" style={{marginTop: "150px"}}>Hello, I am </h1>
+
+                <p className="name text-light my-5" style={{fontSize: "5rem"}}>Ehren Lewis</p>
+                <div className="snippet" >
                 <div className="typewriter">
-                {/* <h2 className="cyber-grey text-light">Fullstack Software Developer</h2> */}
-                {/* <TypeIt className="cyber-grey text-light" element={"h2"}>Fullstack Software Developer</TypeIt> */}
 
                 <TypeIt className="cyber-grey text-light" element={"h2"} style={{fontSize: "3rem"}}
                     getBeforeInit={(instance) => {
                         instance
+                        .pause(500)
+                        .type("Life-long learner")
+                        .pause(500)
+                        .delete(18)
+                        .pause("200")
                         .type("Fullstack Software Developer")
                         .pause("1000")
                         .delete(28)
-                        .pause(500)
-                        .type("Life-long learner");
 
+                        .type("Your next employee")
                     return instance
                     }} />
 
-
                 </div>
-                <p className="description text-light">&emsp;&emsp; Fullstack Software Developer
-                    Coding Bootcamp. I live in Fort Worth, Texas. I currently
-                    have experience with Pyhon, Django, Tkinter, HTML, CSS, Bootstrap, and JavaScript,
+                <p className="description text-light">&emsp;&emsp; I'm a software developer currently living in 
+                Fort Worth, Texas. I'm interestedin frontend, backend, and full stack opportunities,
+                and I can't wait to use my skills in a professional setting!
                 </p>
             </div>
 
@@ -64,7 +67,7 @@ const AboutMe = () => {
                         </div>
                     </div>
                     <div className="col-lg-12 col-xl-6 d-flex justify-content-center">
-                        <img src={require("../images/portraitPhotoTransparent.png")} alt="Myself with a transparent background" />
+                        {/* <img src={require("../images/portraitPhotoTransparent.png")} alt="Myself with a transparent background" /> */}
                     </div>
                 </div>
             </div>

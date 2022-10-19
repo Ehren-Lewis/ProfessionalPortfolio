@@ -13,29 +13,46 @@
     --cyberpunk-black: #061024; 
 
     --cyberpunk-teal: #0BC4CF; 
+
+    
+    --earthy-grey: #8c9086;
+    --earthy-brown: #160c04;
+    --earthy-darkbrown: #0e0804;
+    --earthy-tan: #e6ceb5;
+    --earthy-orange: #c16632;
+    --earthy-blue: #5fc7474;
 }
 
 .nav-bar {
-    background-color: #092047;
+    background-color: var(--earthy-brown);
     /* background: black; */
     width: 60px;
     height: 100%;
     position: fixed;
     /* top: 0; */
-    bottom: 0;
+    /* bottom: 0; */
     min-height: 500px;
-    z-index: -2;
+    padding-left: 20px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 
-.logo {
-    display: block;
-    padding: 8px 0;
+
+.email {
+    text-decoration: inherit;
+    color: var(--cyber-grey);
+    width: fit-content;
+    transform-origin: 0 ;
+    transform: rotate(90deg);
+    padding-bottom: 10px;
+
 }
 
-img {
-    display: block;
-    margin: 8px auto;
-    width: 24px;
-    height: auto
+.email:hover {
+    color: #ced1d7;
+    transition: .4s;
+   
 }
