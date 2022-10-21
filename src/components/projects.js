@@ -74,26 +74,6 @@ const Projects = () => {
             </div>
         </div>
 
-        {/* <div className="row text-light mb-5">
-            <div className="col-lg-7 mx-auto col-xl-4 order-2">
-            { windowWidth > 550 ? 
-                <img src={require("../images/tkinterBookshelf.png")} style={biggerImage} alt="Landing page of Hobby Spot" /> :
-                <img src={require("../images/tkinterBookshelf.png")} style={smallerImage} alt="Landing page of Hobby Spot" />
-                }
-            </div>
-
-            <div className="col-lg-12 col-xl-6 order-1 mx-auto">
-                <p className="project-name mx-auto">Python GUI Library</p>
-
-                <div className="row">
-                    &emsp;&emsp;Python desktop application built with Tkinter
-                    for the GUI and SQLite3 for the database. Designed to have 9 different
-                    bookshelves, name is fully customizable, and each bookshelf can store 
-                    as many books as needed. The application supports creation,
-                    reading, updating, and deleting.
-                </div>
-            </div>
-        </div> */}
 
         <div className="row text-light mb-5">
 
