@@ -31,6 +31,10 @@
 
 }
 
+@font-face {
+  font-family: "Cyberpunk Is Not Dead";
+  src: url('./font/CIND.otf');
+}
 
 /* Color Theme Swatches in Hex */
 /* .cyberpunk-pink{ color: #f14ee3; } */
