@@ -25,24 +25,33 @@ const Projects = () => {
   
     return(
         <div id="projects" style={{marginTop: "150px"}}>
-        <div className="row justify-content-center project-title-container mb-5">
+
+
+        { windowWidth > 850 ?
+            <div className="row justify-content-center mb-5">
             <div className="col-5">
-                {/* <p className="name text-light">My Projects</p> */}
+                <p className="name text-light">My Projects</p>
+            </div>
+        </div> :
+        <div className="row mb-5">
+            <div className="col-5">
+                <p className="name text-light" style={{fontSize: "243m"}}>My Projects</p>
             </div>
         </div>
+        }
+        {/* <div className="row justify-content-center mb-5">
+            <div className="col-5">
+                <p className="name text-light">My Projects</p>
+            </div>
+        </div> */}
 
         <div className="row text-light mb-5 d-flex flex-wrap">
-            <div className="col-lg-7 mx-auto col-xl-4 order-2">
-                { windowWidth > 550 ? 
-                <img src={require("../images/hobbySpotLanding.png")} style={biggerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block"  /> :
-                <img src={require("../images/hobbySpotLanding.png")} style={smallerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block" />
-                }
-            </div>
 
-                <div className="col-lg-12 col-xl-6 order-1 mx-auto">
-                    <p className="project-name mx-auto">Hobby Spot</p>
-                    <div className="row">
-                        <div className="col-12">
+
+            <div className="col-lg-12 col-xl-6 mx-auto">
+                <p className="project-name mx-auto">Hobby Spot</p>
+                <div className="row">
+                    <div className="col-12">
                         <p className="text-center">
                         &emsp;&emsp;Hobby Spot is a Discussion sight focused around allowing individuals to freely discuss
                         Their hobbies as they please. It features a fully functional login system with User authentification,
@@ -50,37 +59,41 @@ const Projects = () => {
                         <a href="https://github.com/ConnerMart" className="links" target="_blank" rel="noreferrer">Conner Martin</a>, 
                         <a href="https://github.com/csundheimjr" className="links" target="_blank" rel="noreferrer">Carl Sundheim</a>, <a href="https://github.com/trystan333" className="links" target="_blank" rel="noreferrer">Trystan Button</a>, and I.</p>
                     </div>
-                    </div>
                 </div>
+            </div>
 
-
-        
+            <div className=" justify-content-center col-lg-12 col-xl-4">
+                { windowWidth > 550 ? 
+                <img src={require("../images/hobbySpotLanding.png")} style={biggerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block"  /> :
+                <img src={require("../images/hobbySpotLanding.png")} style={smallerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block" />
+                }
+            </div>
         </div>
 
         <div className="row text-light mb-5 d-flex">
-            <div className="col-lg-7 mx-auto col-xl-4 order-2">
+
+        <div className="col-lg-12 col-xl-6 mx-auto">
+            <p className="project-name mx-auto">Python Webscraping</p>
+            <div className="row">
+                &emsp;&emsp;Command line Python data scraper. Gathers information on the 2021 movie "Dune" and presents it in an easy to digest format. Built off of Selenium automation, BeautifulSoup for html scraping, and MatPlotLib to present the number of move scores per rating.
+            </div>
+        </div>
+        
+        <div className=" justify-content-center col-lg-12 col-xl-4">
             { windowWidth > 550 ? 
                 <img src={require("../images/scrapingResults.png")} style={biggerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block"  /> :
                 <img src={require("../images/scrapingResults.png")} style={smallerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block"  />
                 }
             </div>
 
-            <div className="col-lg-12 col-xl-6 order-1 mx-auto">
-                <p className="project-name mx-auto">Python Webscraping</p>
 
-                <div className="row">
-                    &emsp;&emsp;Command line Python data scraper. Gathers information on the 2021 movie "Dune" and presents it in an easy to digest format. Built off of Selenium automation, BeautifulSoup for html scraping, and MatPlotLib to present the number of move scores per rating.
-                </div>
-            </div>
         </div>
 
 
         <div className="row text-light mb-5">
 
-
             <div className="col-lg-12 col-xl-6 mx-auto">
                 <p className="project-name mx-auto">Python GUI Library</p>
-
                 <div className="row">
                     &emsp;&emsp;Python desktop application built with Tkinter
                     for the GUI and SQLite3 for the database. Designed to have 9 different
@@ -97,7 +110,6 @@ const Projects = () => {
                 }
             </div>
         </div>
-
 
     </div>
     )
