@@ -5,6 +5,7 @@ import "./sidebar.css"
 // import { faEvernote, faGithub} from "@fortawesome/free-brands-svg-icons"
 const Sidebar = () => {
 
+            //1310 get rid of sidebar.
 
     return (
         <div className="nav-bar">

@@ -6,6 +6,7 @@ import Footer from './layouts/footer';
 import Projects from './components/projects';
 import  EhrenResume from "./images/EhrenLewisResume.pdf"
 import Sidebar from './layouts/sidebar/sidebarindex';
+import { useEffect, useState } from "react";
 
 // import {
 //   BrowserRouter,
@@ -15,9 +16,26 @@ import Sidebar from './layouts/sidebar/sidebarindex';
 // } from 'react-router-dom'
 
 function App() {
+
+  const [windowWidth, setwindowWidth] = useState(window.innerWidth);
+
+  const setWidth = () => {
+    setwindowWidth(window.innerWidth)
+  }
+
+  useEffect( () => {
+    window.addEventListener('resize', setWidth)
+  
+  })
+
+
+
+
   return (
     <>
-          <Sidebar />
+          {/* <Sidebar /> */}
+          { windowWidth < 1310 ? "" : <Sidebar />}
+
 
       <div className='container'>
       {/* <nav className="nav">
@@ -33,7 +51,6 @@ function App() {
         <Projects id="projects"/>
       </div>
 
-      
       {/* <Footer /> */}
     </div>
     </>

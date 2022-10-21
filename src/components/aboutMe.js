@@ -19,7 +19,7 @@ const AboutMe = () => {
            
             <h1 className="greeting cyber-grey text-light" style={{marginTop: "150px"}}>Hello, I am </h1>
 
-                <p className="name text-light my-5" style={{fontSize: "5rem"}}>Ehren Lewis</p>
+                {/* <p className="name text-light my-5" style={{fontSize: "5rem"}}>Ehren Lewis</p> */}
                 <div className="snippet" >
                 <div className="typewriter">
 
@@ -40,10 +40,12 @@ const AboutMe = () => {
                     }} />
 
                 </div>
-                <p className="description text-light">&emsp;&emsp; I'm a software developer currently living in 
+                <div className="col-xs-12 col-lg-6 mx-auto">
+                <p className="description text-light text-center w-100">&emsp;&emsp; I'm a software developer currently living in 
                 Fort Worth, Texas. I'm interested in frontend, backend, and full stack opportunities,
                 and I can't wait to use my skills in a professional setting!
                 </p>
+                </div>
             </div>
 
             </div>
@@ -58,7 +60,7 @@ const AboutMe = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-12 col-xl-6 text-light about-p">
+                    <div className="col-xs-12 col-lg-12 col-xl-6 text-light about-p text-center">
                         <p>&ensp;&ensp;Hi, I'm Ehren! My first runin with software development was my senior year of high school.
                             Ever since then, I've been obssessed the scope of what programming can do, fueling
                             a desire to learn as much as I can about the topic.

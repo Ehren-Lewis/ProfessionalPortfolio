@@ -1,17 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Projects = () => {
+    const [windowWidth, setwindowWidth] = useState(window.innerWidth);
+
+    const setWidth = () => {
+      setwindowWidth(window.innerWidth)
+    }
+  
+    useEffect( () => {
+      window.addEventListener('resize', setWidth)
+      console.log(windowWidth)
+    })
+
+    const smallerImage = {
+        width: "370px",
+        height: "300px"
+    }
+    
+    const biggerImage = {
+        width: "400px",
+        height: "300px"
+    }
+
+  
     return(
         <div id="projects" style={{marginTop: "150px"}}>
         <div className="row justify-content-center project-title-container mb-5">
             <div className="col-5">
-                <p className="name text-light">My Projects</p>
+                {/* <p className="name text-light">My Projects</p> */}
             </div>
         </div>
 
         <div className="row text-light mb-5 d-flex flex-wrap">
             <div className="col-lg-7 mx-auto col-xl-4 order-2">
-                <img src={require("../images/hobbySpotLanding.png")} style={{width: "400px", height:"300px"}} alt="Landing page of Hobby Spot" />
+                { windowWidth > 550 ? 
+                <img src={require("../images/hobbySpotLanding.png")} style={biggerImage} alt="Landing page of Hobby Spot" /> :
+                <img src={require("../images/hobbySpotLanding.png")} style={smallerImage} alt="Landing page of Hobby Spot" />
+                }
             </div>
 
                 <div className="col-lg-12 col-xl-6 order-1 mx-auto">
@@ -31,7 +56,10 @@ const Projects = () => {
 
         <div className="row text-light mb-5 d-flex">
             <div className="col-lg-7 mx-auto col-xl-4 order-2">
-                <img src={require("../images/scrapingResults.png")} alt="The results of the dune web scraper" width="400px" height="300px" />
+            { windowWidth > 550 ? 
+                <img src={require("../images/scrapingResults.png")} style={biggerImage} alt="Landing page of Hobby Spot" /> :
+                <img src={require("../images/scrapingResults.png")} style={smallerImage} alt="Landing page of Hobby Spot" />
+                }
             </div>
 
             <div className="col-lg-12 col-xl-6 order-1 mx-auto">
@@ -45,7 +73,10 @@ const Projects = () => {
 
         <div className="row text-light mb-5">
             <div className="col-lg-7 mx-auto col-xl-4 order-2">
-                <img src={require("../images/tkinterBookshelf.png" )}  style={{width: "400px", height:"300px"}} alt="Landing page of the bookshelf"/>
+            { windowWidth > 550 ? 
+                <img src={require("../images/tkinterBookshelf.png")} style={biggerImage} alt="Landing page of Hobby Spot" /> :
+                <img src={require("../images/tkinterBookshelf.png")} style={smallerImage} alt="Landing page of Hobby Spot" />
+                }
             </div>
 
             <div className="col-lg-12 col-xl-6 order-1 mx-auto">
