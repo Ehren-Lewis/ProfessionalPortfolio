@@ -9,6 +9,12 @@ gsap.registerPlugin(ScrollTrigger);
 // import portaitPhotoTransparent from "../images/portaitPhotoTransparent.png";
 const AboutMe = () => {
 
+
+    const helloStyle = {
+        marginLeft: "20%",
+        marginTop: "150px"
+    }    
+    
     // const [instance, setInstance] = useState(null);
 
     return(
@@ -17,7 +23,7 @@ const AboutMe = () => {
         <>
         <div className="background-wrapper">
            
-            <h1 className="greeting cyber-grey text-light" style={{marginTop: "150px"}}>Hello, I am </h1>
+            <h1 className="greeting cyber-grey text-light" style={helloStyle}>Hello, I am </h1>
 
                 {/* <p className="name text-light my-5" style={{fontSize: "5rem"}}>Ehren Lewis</p> */}
                 <div className="snippet" >
