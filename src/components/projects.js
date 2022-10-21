@@ -9,17 +9,17 @@ const Projects = () => {
   
     useEffect( () => {
       window.addEventListener('resize', setWidth)
-      console.log(windowWidth)
     })
 
     const smallerImage = {
-        width: "370px",
-        height: "300px"
+        width: "330px",
+        height: "300px",
+  
     }
     
     const biggerImage = {
         width: "400px",
-        height: "300px"
+        height: "300px",
     }
 
   
@@ -34,19 +34,22 @@ const Projects = () => {
         <div className="row text-light mb-5 d-flex flex-wrap">
             <div className="col-lg-7 mx-auto col-xl-4 order-2">
                 { windowWidth > 550 ? 
-                <img src={require("../images/hobbySpotLanding.png")} style={biggerImage} alt="Landing page of Hobby Spot" /> :
-                <img src={require("../images/hobbySpotLanding.png")} style={smallerImage} alt="Landing page of Hobby Spot" />
+                <img src={require("../images/hobbySpotLanding.png")} style={biggerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block"  /> :
+                <img src={require("../images/hobbySpotLanding.png")} style={smallerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block" />
                 }
             </div>
 
                 <div className="col-lg-12 col-xl-6 order-1 mx-auto">
                     <p className="project-name mx-auto">Hobby Spot</p>
                     <div className="row">
+                        <div className="col-12">
+                        <p className="text-center">
                         &emsp;&emsp;Hobby Spot is a Discussion sight focused around allowing individuals to freely discuss
                         Their hobbies as they please. It features a fully functional login system with User authentification,
                         as well as using cookies to persist session information for the user. This project was a collaboration between <a href="https://github.com/SThevenot" className="links" target="_blank" rel="noreferrer">Sarah Thevenot</a>, <a href="https://github.com/vianvianc" className="links" target="_blank" rel="noreferrer">Vian Charbonneau</a>,
                         <a href="https://github.com/ConnerMart" className="links" target="_blank" rel="noreferrer">Conner Martin</a>, 
-                        <a href="https://github.com/csundheimjr" className="links" target="_blank" rel="noreferrer">Carl Sundheim</a>, <a href="https://github.com/trystan333" className="links" target="_blank" rel="noreferrer">Trystan Button</a>, and I.
+                        <a href="https://github.com/csundheimjr" className="links" target="_blank" rel="noreferrer">Carl Sundheim</a>, <a href="https://github.com/trystan333" className="links" target="_blank" rel="noreferrer">Trystan Button</a>, and I.</p>
+                    </div>
                     </div>
                 </div>
 
@@ -57,8 +60,8 @@ const Projects = () => {
         <div className="row text-light mb-5 d-flex">
             <div className="col-lg-7 mx-auto col-xl-4 order-2">
             { windowWidth > 550 ? 
-                <img src={require("../images/scrapingResults.png")} style={biggerImage} alt="Landing page of Hobby Spot" /> :
-                <img src={require("../images/scrapingResults.png")} style={smallerImage} alt="Landing page of Hobby Spot" />
+                <img src={require("../images/scrapingResults.png")} style={biggerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block"  /> :
+                <img src={require("../images/scrapingResults.png")} style={smallerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block"  />
                 }
             </div>
 
@@ -71,7 +74,7 @@ const Projects = () => {
             </div>
         </div>
 
-        <div className="row text-light mb-5">
+        {/* <div className="row text-light mb-5">
             <div className="col-lg-7 mx-auto col-xl-4 order-2">
             { windowWidth > 550 ? 
                 <img src={require("../images/tkinterBookshelf.png")} style={biggerImage} alt="Landing page of Hobby Spot" /> :
@@ -90,7 +93,32 @@ const Projects = () => {
                     reading, updating, and deleting.
                 </div>
             </div>
+        </div> */}
+
+        <div className="row text-light mb-5">
+
+
+            <div className="col-lg-12 col-xl-6 mx-auto">
+                <p className="project-name mx-auto">Python GUI Library</p>
+
+                <div className="row">
+                    &emsp;&emsp;Python desktop application built with Tkinter
+                    for the GUI and SQLite3 for the database. Designed to have 9 different
+                    bookshelves, name is fully customizable, and each bookshelf can store 
+                    as many books as needed. The application supports creation,
+                    reading, updating, and deleting.
+                </div>
+            </div>
+
+            <div className=" justify-content-center col-lg-12 col-xl-4">
+            { windowWidth > 550 ? 
+                <img src={require("../images/tkinterBookshelf.png")} style={biggerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block" /> :
+                <img src={require("../images/tkinterBookshelf.png")} style={smallerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block" />
+                }
+            </div>
         </div>
+
+
     </div>
     )
 }
