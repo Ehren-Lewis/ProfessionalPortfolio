@@ -2,7 +2,8 @@ import "./App.css"
 
 import Header from './layouts/header';
 import AboutMe from './components/aboutMe';
-import Footer from './layouts/footer';
+// import Footer from './layouts/footer/footer';
+import Footer from "./layouts/footer/footer";
 import Projects from './components/projects';
 import  EhrenResume from "./images/EhrenLewisResume.pdf"
 import Sidebar from './layouts/sidebar/sidebarindex';
@@ -51,7 +52,7 @@ function App() {
         <Projects id="projects"/>
       </div>
 
-      {/* <Footer /> */}
+      { windowWidth < 1310 ? <Footer /> : ""}
     </div>
     </>
 

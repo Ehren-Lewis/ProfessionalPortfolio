@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import TypeIt from "typeit-react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,12 +9,29 @@ gsap.registerPlugin(ScrollTrigger);
 // import portaitPhotoTransparent from "../images/portaitPhotoTransparent.png";
 const AboutMe = () => {
 
+    const [windowWidth, setwindowWidth] = useState(window.innerWidth);
+
+    const setWidth = () => {
+      setwindowWidth(window.innerWidth)
+    }
+  
+    useEffect( () => {
+      window.addEventListener('resize', setWidth)
+    })
 
     const helloStyle = {
         marginLeft: "20%",
         marginTop: "150px"
     }    
     
+
+    const nameStyle = {
+        fontSize: "5rem"
+    }
+
+    const snallStyle= {
+        fontSize: "3rem"
+    }
     // const [instance, setInstance] = useState(null);
 
     return(
@@ -25,11 +42,11 @@ const AboutMe = () => {
            
             <h1 className="greeting cyber-grey text-light" style={helloStyle}>Hello, I am </h1>
 
-                {/* <p className="name text-light my-5" style={{fontSize: "5rem"}}>Ehren Lewis</p> */}
+                <p className="name text-light my-5" style={{ fontSize: windowWidth < 500 ? "2rem" : "5rem"}}>Ehren Lewis</p>
                 <div className="snippet" >
                 <div className="typewriter">
 
-                <TypeIt className="cyber-grey text-light" element={"h2"} style={{fontSize: "3rem"}}
+                <TypeIt className="cyber-grey text-light" element={"h2"} style={{fontSize: windowWidth < 500 ? "2rem": "3rem"}}
                     getBeforeInit={(instance) => {
                         instance
                         .pause(500)
@@ -46,7 +63,7 @@ const AboutMe = () => {
                     }} />
 
                 </div>
-                <div className="col-xs-12 col-lg-6 mx-auto">
+                <div className="col-xs-11 col-lg-6 mx-auto">
                 <p className="description text-light text-center w-100">&emsp;&emsp; I'm a software developer currently living in 
                 Fort Worth, Texas. I'm interested in frontend, backend, and full stack opportunities,
                 and I can't wait to use my skills in a professional setting!

@@ -26,7 +26,7 @@ const Projects = () => {
     return(
         <div id="projects" style={{marginTop: "150px"}}>
 
-
+{/* 
         { windowWidth > 850 ?
             <div className="row justify-content-center mb-5">
             <div className="col-5">
@@ -38,14 +38,14 @@ const Projects = () => {
                 <p className="name text-light" style={{fontSize: "243m"}}>My Projects</p>
             </div>
         </div>
-        }
-        {/* <div className="row justify-content-center mb-5">
+        } */}
+        <div className={windowWidth < 500 ? "row mb-5" : "row justify-content-center mb-5" }>
             <div className="col-5">
                 <p className="name text-light">My Projects</p>
             </div>
-        </div> */}
+        </div>
 
-        <div className="row text-light mb-5 d-flex flex-wrap">
+        <div className="row text-light mb-5">
 
 
             <div className="col-lg-12 col-xl-6 mx-auto">
@@ -75,7 +75,9 @@ const Projects = () => {
         <div className="col-lg-12 col-xl-6 mx-auto">
             <p className="project-name mx-auto">Python Webscraping</p>
             <div className="row">
+            <p className="text-center">
                 &emsp;&emsp;Command line Python data scraper. Gathers information on the 2021 movie "Dune" and presents it in an easy to digest format. Built off of Selenium automation, BeautifulSoup for html scraping, and MatPlotLib to present the number of move scores per rating.
+            </p>
             </div>
         </div>
         
@@ -95,11 +97,14 @@ const Projects = () => {
             <div className="col-lg-12 col-xl-6 mx-auto">
                 <p className="project-name mx-auto">Python GUI Library</p>
                 <div className="row">
+                
+                <p className="text-center">
                     &emsp;&emsp;Python desktop application built with Tkinter
                     for the GUI and SQLite3 for the database. Designed to have 9 different
                     bookshelves, name is fully customizable, and each bookshelf can store 
                     as many books as needed. The application supports creation,
                     reading, updating, and deleting.
+                </p>
                 </div>
             </div>
 
@@ -111,7 +116,10 @@ const Projects = () => {
             </div>
         </div>
 
-    </div>
+
+
+
+        </div>
     )
 }
 
