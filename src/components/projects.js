@@ -39,9 +39,9 @@ const Projects = () => {
             </div>
         </div>
         } */}
-        <div className={windowWidth < 500 ? "row mb-5" : "row justify-content-center mb-5" }>
+        <div className={windowWidth < 600 ? "row mb-5" : "row justify-content-center mb-5" }>
             <div className="col-5">
-                <p className="name text-light">My Projects</p>
+                <p className="name text-light" style={{fontSize: windowWidth <  500 ? "2.5rem" : "3rem"}}>My Projects</p>
             </div>
         </div>
 
@@ -73,7 +73,7 @@ const Projects = () => {
         <div className="row text-light mb-5 d-flex">
 
         <div className="col-lg-12 col-xl-6 mx-auto">
-            <p className="project-name mx-auto">Python Webscraping</p>
+            <p className="project-name mx-auto" style={{fontSize: windowWidth < 500 ? "1.5rem" : "2rem"}}>Python Webscraping</p>
             <div className="row">
             <p className="text-center">
                 &emsp;&emsp;Command line Python data scraper. Gathers information on the 2021 movie "Dune" and presents it in an easy to digest format. Built off of Selenium automation, BeautifulSoup for html scraping, and MatPlotLib to present the number of move scores per rating.
@@ -95,7 +95,7 @@ const Projects = () => {
         <div className="row text-light mb-5">
 
             <div className="col-lg-12 col-xl-6 mx-auto">
-                <p className="project-name mx-auto">Python GUI Library</p>
+                <p className="project-name mx-auto" style={{fontSize: windowWidth < 500 ? "1.7rem" : "2rem"}}>Python GUI Library</p>
                 <div className="row">
                 
                 <p className="text-center">

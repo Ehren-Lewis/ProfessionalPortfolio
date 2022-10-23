@@ -295,6 +295,7 @@ body {
   align-items: center;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .footer a {
@@ -315,10 +316,10 @@ body {
 }
 
 
-#projects {
+/* #projects {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .email-me {
   color: var(--cyber-grey);
@@ -348,9 +349,9 @@ body {
 
 
   @media screen and (max-width: 1250px) {
-    #projects {
+    /* #projects {
       flex-wrap: wrap;
-    }
+    } */
     
     .project-name {
       margin: 0 auto;

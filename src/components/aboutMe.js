@@ -42,7 +42,9 @@ const AboutMe = () => {
            
             <h1 className="greeting cyber-grey text-light" style={helloStyle}>Hello, I am </h1>
 
-                <p className="name text-light my-5" style={{ fontSize: windowWidth < 500 ? "2rem" : "5rem"}}>Ehren Lewis</p>
+                {/* <p className="name text-light my-5" style={{ fontSize: windowWidth < 500 ? "2rem" : "5rem"}}>Ehren Lewis</p> */}
+                <p className="name text-light my-5" style={{ fontSize: windowWidth < 500 ? "2.3rem" : windowWidth < 769 ? "3rem" : "5rem"}}>Ehren Lewis</p>
+
                 <div className="snippet" >
                 <div className="typewriter">
 
