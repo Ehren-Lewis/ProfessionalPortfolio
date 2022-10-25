@@ -1,0 +1,11 @@
+Hobby Spot:
+https://damp-reaches-02576.herokuapp.com/home
+https://github.com/Ehren-Lewis/HobbySpot
+
+ConnectKid:
+https://hidden-spire-64432.herokuapp.com/
+https://github.com/Ehren-Lewis/ConnectKid
+
+Deep Thoughts:
+https://thawing-depths-74272.herokuapp.com/
+https://github.com/Ehren-Lewis/DeepThoughts

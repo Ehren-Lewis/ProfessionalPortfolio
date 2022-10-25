@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import {Button } from "react-bootstrap"
 const Projects = () => {
     const [windowWidth, setwindowWidth] = useState(window.innerWidth);
 
@@ -60,8 +60,16 @@ const Projects = () => {
                         <a href="https://github.com/csundheimjr" className="links" target="_blank" rel="noreferrer">Carl Sundheim</a>, <a href="https://github.com/trystan333" className="links" target="_blank" rel="noreferrer">Trystan Button</a>, and I.</p>
                     </div>
                 </div>
-            </div>
+                <div className="row pb-5">
+                    <div className="col-6 mx-auto d-flex justify-content-around">
+                        <Button className="btn" onClick={ () => {window.open("https://github.com/Ehren-Lewis/HobbySpot")}}>Repository</Button>
 
+
+                        <Button className="btn" onClick={ () => {window.open("https://damp-reaches-02576.herokuapp.com")}}>Live Site</Button>
+                    </div>
+                </div>
+            </div>
+            
             <div className=" justify-content-center col-lg-12 col-xl-4">
                 { windowWidth > 550 ? 
                 <img src={require("../images/hobbySpotLanding.png")} style={biggerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block"  /> :
@@ -73,11 +81,19 @@ const Projects = () => {
         <div className="row text-light mb-5 d-flex">
 
         <div className="col-lg-12 col-xl-6 mx-auto">
-            <p className="project-name mx-auto" style={{fontSize: windowWidth < 500 ? "1.5rem" : "2rem"}}>Python Webscraping</p>
+            <p className="project-name mx-auto" style={{fontSize: windowWidth < 500 ? "1.5rem" : "2rem"}}>ConnectKid</p>
             <div className="row">
             <p className="text-center">
-                &emsp;&emsp;Command line Python data scraper. Gathers information on the 2021 movie "Dune" and presents it in an easy to digest format. Built off of Selenium automation, BeautifulSoup for html scraping, and MatPlotLib to present the number of move scores per rating.
+                &emsp;&emsp;ConnectKid is a full-stack React application focused on providing both in-person and online events with the ability
+                to set attendence through the fully authentificated login system. Built with React,
+                Express.Js, Node.Js, React-Bootstrap, JWT, Apollo, GraphQL, and Bcrypt.
             </p>
+            </div>
+            <div className="row pb-5">
+                <div className="col-6 mx-auto d-flex justify-content-around">
+                    <Button className="btn" onClick={ () => {window.open("https://github.com/Ehren-Lewis/ConnectKid")}}>Repository</Button>
+                    <Button className="btn" onClick={ () => {window.open("https://hidden-spire-64432.herokuapp.com/")}}>Live Site</Button>
+                </div>
             </div>
         </div>
         
@@ -95,17 +111,21 @@ const Projects = () => {
         <div className="row text-light mb-5">
 
             <div className="col-lg-12 col-xl-6 mx-auto">
-                <p className="project-name mx-auto" style={{fontSize: windowWidth < 500 ? "1.7rem" : "2rem"}}>Python GUI Library</p>
+                <p className="project-name mx-auto" style={{fontSize: windowWidth < 500 ? "1.7rem" : "2rem"}}>Deep Thoughts</p>
                 <div className="row">
                 
                 <p className="text-center">
-                    &emsp;&emsp;Python desktop application built with Tkinter
-                    for the GUI and SQLite3 for the database. Designed to have 9 different
-                    bookshelves, name is fully customizable, and each bookshelf can store 
-                    as many books as needed. The application supports creation,
-                    reading, updating, and deleting.
+                    &emsp;&emsp;Deep Thoughts is a full-stack React thought board designed to allow users to post their Thoughts
+                    without having to login. Designed and implemented with DynamoDB and S3 Bucket AWS services in the backend, React on the frontend,
+                    and deployed to Heroku.
                 </p>
                 </div>
+                <div className="row pb-5">
+                <div className="col-6 mx-auto d-flex justify-content-around">
+                    <Button className="btn" onClick={ () => {window.open("https://github.com/Ehren-Lewis/DeepThoughts")}}>Repository</Button>
+                    <Button className="btn" onClick={ () => {window.open("https://thawing-depths-74272.herokuapp.com/")}}>Live Site</Button>
+                </div>
+            </div>
             </div>
 
             <div className=" justify-content-center col-lg-12 col-xl-4">

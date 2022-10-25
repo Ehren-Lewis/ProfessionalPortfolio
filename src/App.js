@@ -8,7 +8,7 @@ import Projects from './components/projects';
 import  EhrenResume from "./images/EhrenLewisResume.pdf"
 import Sidebar from './layouts/sidebar/sidebarindex';
 import { useEffect, useState } from "react";
-
+import Technologies from "./components/technologies";
 // import {
 //   BrowserRouter,
 //   Route,
@@ -49,6 +49,7 @@ function App() {
       <Header />
       <div>
         <AboutMe id="about" />
+        {/* <Technologies /> */}
         <Projects id="projects"/>
       </div>
 
