@@ -69,7 +69,7 @@ const Projects = () => {
                     </div>
                 </div>
             </div>
-            
+
             <div className=" justify-content-center col-lg-12 col-xl-4">
                 { windowWidth > 550 ? 
                 <img src={require("../images/hobbySpotLanding.png")} style={biggerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block"  /> :
@@ -99,8 +99,8 @@ const Projects = () => {
         
         <div className=" justify-content-center col-lg-12 col-xl-4">
             { windowWidth > 550 ? 
-                <img src={require("../images/scrapingResults.png")} style={biggerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block"  /> :
-                <img src={require("../images/scrapingResults.png")} style={smallerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block"  />
+                <img src={require("../images/connectKidEvents.png")} style={biggerImage} alt="Event page of ConnectKid" className="mx-auto d-block"  /> :
+                <img src={require("../images/connectKidEvents.png")} style={smallerImage} alt="Event page of ConnectKid" className="mx-auto d-block"  />
                 }
             </div>
 
@@ -130,8 +130,8 @@ const Projects = () => {
 
             <div className=" justify-content-center col-lg-12 col-xl-4">
             { windowWidth > 550 ? 
-                <img src={require("../images/tkinterBookshelf.png")} style={biggerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block" /> :
-                <img src={require("../images/tkinterBookshelf.png")} style={smallerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block" />
+                <img src={require("../images/DeepThoughtsLanding.png")} style={biggerImage} alt="Landing page of Deep Thoughts" className="mx-auto d-block" /> :
+                <img src={require("../images/DeepThoughtsLanding.png")} style={smallerImage} alt="Landing page of Deep Thoughts" className="mx-auto d-block" />
                 }
             </div>
         </div>
