@@ -134,6 +134,7 @@ body {
 
 }
 
+
 @keyframes fade {
   from {
       opacity: 1;
@@ -199,8 +200,15 @@ body {
   border-radius: 10px; */
 /* } */
 
+.btn-orange {
+    background-color: var(--earthy-orange);
+    border-color: var(--earthy-orange);
+}
 
-
+.btn-orange:hover {
+  background-color: #944e26;
+  border-color: #944e26;
+}
 
 .project-name {
   font-family: 'Cyberpunk Is Not Dead', sans-serif; 
@@ -230,11 +238,12 @@ body {
   display: contents;
   margin: 0;
   padding: 0;
-  color: var(--earthy-grey)
+  color: var(--earthy-grey);
+  transition: .2s ease-in-out;
 }
 
 .links:hover {
-  color: var(--earthy-tan)  
+  color: var(--earthy-orange)  
 }
 
 .test {
@@ -346,6 +355,7 @@ body {
     background: #84878d;
     border-radius: 15px;
   }
+
 
 
   @media screen and (max-width: 1250px) {

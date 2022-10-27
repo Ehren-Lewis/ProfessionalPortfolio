@@ -24,59 +24,16 @@ const Projects = () => {
 
   
     return(
-        <div id="projects" style={{marginTop: "150px"}}>
+        <div id="projects" style={{marginTop: "125px"}}>
 
-{/* 
-        { windowWidth > 850 ?
-            <div className="row justify-content-center mb-5">
-            <div className="col-5">
-                <p className="name text-light">My Projects</p>
-            </div>
-        </div> :
-        <div className="row mb-5">
-            <div className="col-5">
-                <p className="name text-light" style={{fontSize: "243m"}}>My Projects</p>
-            </div>
-        </div>
-        } */}
         <div className={windowWidth < 600 ? "row mb-5" : "row justify-content-center mb-5" }>
             <div className="col-5">
                 <p className="name text-light" style={{fontSize: windowWidth <  500 ? "2.5rem" : "3rem"}}>My Projects</p>
             </div>
         </div>
 
-        <div className="row text-light mb-5">
 
 
-            <div className="col-lg-12 col-xl-6 mx-auto">
-                <p className="project-name mx-auto">Hobby Spot</p>
-                <div className="row">
-                    <div className="col-12">
-                        <p className="text-center">
-                        &emsp;&emsp;Hobby Spot is a Discussion sight focused around allowing individuals to freely discuss
-                        Their hobbies as they please. It features a fully functional login system with User authentification,
-                        as well as using cookies to persist session information for the user. This project was a collaboration between <a href="https://github.com/SThevenot" className="links" target="_blank" rel="noreferrer">Sarah Thevenot</a>, <a href="https://github.com/vianvianc" className="links" target="_blank" rel="noreferrer">Vian Charbonneau</a>,
-                        <a href="https://github.com/ConnerMart" className="links" target="_blank" rel="noreferrer">Conner Martin</a>, 
-                        <a href="https://github.com/csundheimjr" className="links" target="_blank" rel="noreferrer">Carl Sundheim</a>, <a href="https://github.com/trystan333" className="links" target="_blank" rel="noreferrer">Trystan Button</a>, and I.</p>
-                    </div>
-                </div>
-                <div className="row pb-5">
-                    <div className="col-6 mx-auto d-flex justify-content-around">
-                        <Button className="btn" onClick={ () => {window.open("https://github.com/Ehren-Lewis/HobbySpot")}}>Repository</Button>
-
-
-                        <Button className="btn" onClick={ () => {window.open("https://damp-reaches-02576.herokuapp.com")}}>Live Site</Button>
-                    </div>
-                </div>
-            </div>
-
-            <div className=" justify-content-center col-lg-12 col-xl-4">
-                { windowWidth > 550 ? 
-                <img src={require("../images/hobbySpotLanding.png")} style={biggerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block"  /> :
-                <img src={require("../images/hobbySpotLanding.png")} style={smallerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block" />
-                }
-            </div>
-        </div>
 
         <div className="row text-light mb-5 d-flex">
 
@@ -91,8 +48,8 @@ const Projects = () => {
             </div>
             <div className="row pb-5">
                 <div className="col-6 mx-auto d-flex justify-content-around">
-                    <Button className="btn" onClick={ () => {window.open("https://github.com/Ehren-Lewis/ConnectKid")}}>Repository</Button>
-                    <Button className="btn" onClick={ () => {window.open("https://hidden-spire-64432.herokuapp.com/")}}>Live Site</Button>
+                    <Button className="btn btn-orange" onClick={ () => {window.open("https://github.com/Ehren-Lewis/ConnectKid")}}>Repository</Button>
+                    <Button className="btn btn-orange" onClick={ () => {window.open("https://hidden-spire-64432.herokuapp.com/")}}>Live Site</Button>
                 </div>
             </div>
         </div>
@@ -122,8 +79,8 @@ const Projects = () => {
                 </div>
                 <div className="row pb-5">
                 <div className="col-6 mx-auto d-flex justify-content-around">
-                    <Button className="btn" onClick={ () => {window.open("https://github.com/Ehren-Lewis/DeepThoughts")}}>Repository</Button>
-                    <Button className="btn" onClick={ () => {window.open("https://thawing-depths-74272.herokuapp.com/")}}>Live Site</Button>
+                    <Button className="btn btn-orange" onClick={ () => {window.open("https://github.com/Ehren-Lewis/DeepThoughts")}}>Repository</Button>
+                    <Button className="btn btn-orange" onClick={ () => {window.open("https://thawing-depths-74272.herokuapp.com/")}}>Live Site</Button>
                 </div>
             </div>
             </div>
@@ -132,6 +89,39 @@ const Projects = () => {
             { windowWidth > 550 ? 
                 <img src={require("../images/DeepThoughtsLanding.png")} style={biggerImage} alt="Landing page of Deep Thoughts" className="mx-auto d-block" /> :
                 <img src={require("../images/DeepThoughtsLanding.png")} style={smallerImage} alt="Landing page of Deep Thoughts" className="mx-auto d-block" />
+                }
+            </div>
+        </div>
+
+        <div className="row text-light mb-5">
+
+
+            <div className="col-lg-12 col-xl-6 mx-auto">
+                <p className="project-name mx-auto">Hobby Spot</p>
+                <div className="row">
+                    <div className="col-12">
+                        <p className="text-center">
+                        &emsp;&emsp;Hobby Spot is a Discussion sight focused around allowing individuals to freely discuss
+                        Their hobbies as they please. It features a fully functional login system with User authentification,
+                        as well as using cookies to persist session information for the user. This project was a collaboration between <a href="https://github.com/SThevenot" className="links" target="_blank" rel="noreferrer">Sarah Thevenot</a>, <a href="https://github.com/vianvianc" className="links" target="_blank" rel="noreferrer"> Vian Charbonneau</a>,
+                        <a href="https://github.com/ConnerMart" className="links" target="_blank" rel="noreferrer"> Conner Martin</a>, 
+                        <a href="https://github.com/csundheimjr" className="links" target="_blank" rel="noreferrer"> Carl Sundheim</a>, <a href="https://github.com/trystan333" className="links" target="_blank" rel="noreferrer">Trystan Button</a>, and I.</p>
+                    </div>
+                </div>
+                <div className="row pb-5">
+                    <div className="col-6 mx-auto d-flex justify-content-around">
+                        <Button className="btn btn-orange" onClick={ () => {window.open("https://github.com/Ehren-Lewis/HobbySpot")}}>Repository</Button>
+
+
+                        <Button className="btn btn-orange" onClick={ () => {window.open("https://damp-reaches-02576.herokuapp.com")}}>Live Site</Button>
+                    </div>
+                </div>
+            </div>
+
+            <div className=" justify-content-center col-lg-12 col-xl-4">
+                { windowWidth > 550 ? 
+                <img src={require("../images/hobbySpotLanding.png")} style={biggerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block"  /> :
+                <img src={require("../images/hobbySpotLanding.png")} style={smallerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block" />
                 }
             </div>
         </div>

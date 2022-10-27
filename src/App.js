@@ -5,7 +5,6 @@ import AboutMe from './components/aboutMe';
 // import Footer from './layouts/footer/footer';
 import Footer from "./layouts/footer/footer";
 import Projects from './components/projects';
-import  EhrenResume from "./images/EhrenLewisResume.pdf"
 import Sidebar from './layouts/sidebar/sidebarindex';
 import { useEffect, useState } from "react";
 import Technologies from "./components/technologies";
@@ -34,7 +33,6 @@ function App() {
 
   return (
     <>
-          {/* <Sidebar /> */}
           { windowWidth < 1310 ? "" : <Sidebar />}
 
 
@@ -49,7 +47,7 @@ function App() {
       <Header />
       <div>
         <AboutMe id="about" />
-        {/* <Technologies /> */}
+        <Technologies />
         <Projects id="projects"/>
       </div>
 
