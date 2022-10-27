@@ -2,7 +2,6 @@ import React, {useState, useEffect} from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./aboutMeStyle.css"
-import { Button } from "react-bootstrap";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,7 +29,7 @@ const Technologies = () => {
                 
             </div>
             <div className="row justify-content-center">
-            <a target="_blank" className="links" href="https://icons8.com/icon/t2x6DtCn5Zzx/nginx">All icons by Icons8</a>
+            <a target="_blank" rel="noreferrer" className="links" href="https://icons8.com/icon/t2x6DtCn5Zzx/nginx">All icons by Icons8</a>
             </div>
         </div>
 
@@ -51,7 +50,7 @@ const Technologies = () => {
                         <img src="https://img.icons8.com/color/48/000000/mysql-logo.png" alt="MySQL" />
                         <img src="https://img.icons8.com/color/48/000000/graphql.png" alt="GraphQL" />
                         <img src="https://img.icons8.com/color/48/000000/mongodb.png" alt="MongoDB" />
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/DynamoDB.png" style={{width: "48px", height: "48px"}} />
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/DynamoDB.png" style={{width: "48px", height: "48px"}} alt="DynamoDB" />
                     </div>
                 </div>
             </div>

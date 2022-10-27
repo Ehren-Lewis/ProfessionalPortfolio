@@ -1,5 +1,5 @@
 import React from "react";
-import resume from "../images/EhrenLewisOfficial.pdf"
+import resume from "../images/EhrenLewisResume.pdf"
 
 const Header = () => {
 

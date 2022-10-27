@@ -47,7 +47,7 @@ const Projects = () => {
             </p>
             </div>
             <div className="row pb-5">
-                <div className="col-6 mx-auto d-flex justify-content-around">
+                <div className="col-8 mx-auto d-flex justify-content-around">
                     <Button className="btn btn-orange" onClick={ () => {window.open("https://github.com/Ehren-Lewis/ConnectKid")}}>Repository</Button>
                     <Button className="btn btn-orange" onClick={ () => {window.open("https://hidden-spire-64432.herokuapp.com/")}}>Live Site</Button>
                 </div>
@@ -78,7 +78,7 @@ const Projects = () => {
                 </p>
                 </div>
                 <div className="row pb-5">
-                <div className="col-6 mx-auto d-flex justify-content-around">
+                <div className="col-8 mx-auto d-flex justify-content-around">
                     <Button className="btn btn-orange" onClick={ () => {window.open("https://github.com/Ehren-Lewis/DeepThoughts")}}>Repository</Button>
                     <Button className="btn btn-orange" onClick={ () => {window.open("https://thawing-depths-74272.herokuapp.com/")}}>Live Site</Button>
                 </div>
@@ -109,10 +109,8 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="row pb-5">
-                    <div className="col-6 mx-auto d-flex justify-content-around">
-                        <Button className="btn btn-orange" onClick={ () => {window.open("https://github.com/Ehren-Lewis/HobbySpot")}}>Repository</Button>
-
-
+                    <div className="col-8 mx-auto d-flex justify-content-around">
+                        <Button className="btn btn-orange"  onClick={ () => {window.open("https://github.com/Ehren-Lewis/HobbySpot")}}>Repository</Button>
                         <Button className="btn btn-orange" onClick={ () => {window.open("https://damp-reaches-02576.herokuapp.com")}}>Live Site</Button>
                     </div>
                 </div>
