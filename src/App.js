@@ -8,6 +8,7 @@ import Projects from './components/projects';
 import Sidebar from './layouts/sidebar/sidebarindex';
 import { useEffect, useState } from "react";
 import Technologies from "./components/technologies";
+import ContactForm from "./components/contactMe";
 // import {
 //   BrowserRouter,
 //   Route,
@@ -49,6 +50,7 @@ function App() {
         <AboutMe id="about" />
         <Technologies />
         <Projects id="projects"/>
+        <ContactForm />
       </div>
 
       { windowWidth < 1310 ? <Footer /> : ""}
