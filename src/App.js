@@ -50,7 +50,7 @@ function App() {
         <AboutMe id="about" />
         <Technologies />
         <Projects id="projects"/>
-        <ContactForm />
+        {/* <ContactForm /> */}
       </div>
 
       { windowWidth < 1310 ? <Footer /> : ""}
