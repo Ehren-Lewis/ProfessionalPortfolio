@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from 'react';
 import { Form } from 'react-bootstrap';
+import emailjs from '@emailjs/browser';
 import "./contactMe.css"
 
 const ContactForm =  () => {
@@ -11,6 +12,10 @@ const ContactForm =  () => {
       window.addEventListener('resize', setWidth)
     });
 
+    const onSubmit = () => {
+        e.preventDefault();
+    }
+
     return (
 
         <>
@@ -21,7 +26,7 @@ const ContactForm =  () => {
         </div>
         <div className='row'>
             <div className='col'>
-                <Form className='text-light w-50 mx-auto p-3' style={{border: "1px solid #c16632"}}>
+                <Form className='text-light w-50 mx-auto p-3' style={{border: "1px solid #c16632"}} id="contactForm">
                 <Form.Group className='mb-2'>
                 <Form.Label>Name</Form.Label>
                 <Form.Control type="text" placeholder="Full Name" className='form-input'/>
