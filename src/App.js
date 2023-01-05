@@ -9,6 +9,7 @@ import Sidebar from './layouts/sidebar/sidebarindex';
 import { useEffect, useState } from "react";
 import Technologies from "./components/technologies";
 import ContactForm from "./components/contactMe";
+import OtherWorks from "./components/otherWorks";
 // import {
 //   BrowserRouter,
 //   Route,
@@ -51,6 +52,7 @@ function App() {
         <Technologies />
         <Projects id="projects"/>
         {/* <ContactForm /> */}
+        <OtherWorks />
       </div>
 
       { windowWidth < 1310 ? <Footer /> : ""}

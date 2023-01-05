@@ -104,7 +104,7 @@ const AboutMe = () => {
                         </div>
                     </div>
                     <div className="col-lg-12 col-xl-6 d-flex justify-content-center">
-                        <img src={require("../images/portraitPhotoTransparent.png")} alt="Myself with a transparent background" width="300px" height="304px" className="img-border"/>
+                        <img src={require("../images/professionalpicture.jpg")} alt="Myself with a transparent background" width="300px" height="304px" className="img-border"/>
                     </div> 
                 </div>
             </div>
