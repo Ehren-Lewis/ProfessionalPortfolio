@@ -52,7 +52,7 @@ function App() {
         <Technologies />
         <Projects id="projects"/>
         {/* <ContactForm /> */}
-        <OtherWorks />
+        {/* <OtherWorks /> */}
       </div>
 
       { windowWidth < 1310 ? <Footer /> : ""}
