@@ -74,23 +74,20 @@ const OtherWorks = () => {
       window.addEventListener('resize', setWidth)
     })
 
-    // useEffect( () => {
-    //     const getData = () => {
-    //         const myData = axios.get(myReposUrl).then( (response) => {
-    //             setRepoData(response.data);
-    //             console.log(response.data);
-    //         });
-    //     }
-    //     getData();
-    // }, [])
-
-  
-//data.url
 
     return(
-        <div>
+        <div>      
 
-            <div style={{marginBottom:"200px"}}></div>
+
+            <div style={{marginBottom:"100px"}}></div>
+
+            <div className={windowWidth < 600 ? "row mb-5" : "row justify-content-center mb-5" }>
+                <div className="col-5">
+                    <p className="name text-light" style={{fontSize: windowWidth <  500 ? "2.5rem" : "3rem"}}>Other Works</p>
+                </div>
+            </div>
+
+
             
             <div className="row row-cols-1 row-cols-md-3 g-4">
             {otherWorksInfo.map( ele => {
@@ -114,9 +111,9 @@ const OtherWorks = () => {
                         <div className="card-footer">
                             {
                                 <ul className="technology-list">
-                                    {ele.tech.map( (tech_item) => {
+                                    {ele.tech.map( (tech_item, idx) => {
                                         return (
-                                            <li>{tech_item}</li>
+                                            <li key={`${ele.name}-tech-${idx}`}>{tech_item}</li>
                                         )
                                     })}
                                 </ul>
@@ -130,69 +127,6 @@ const OtherWorks = () => {
                 
             })
             }
-                {/* <div className="col">
-                    <div className="card h-100">
-                    <div className="card-body">
-                        <div className="card-title">
-                        <div className="card-title-wrapper">
-                            <p>Hobby Spot</p>
-                            <a href="https://github.com/Ehren-Lewis/HobbySpot" target={"_blank"}>
-                            <svg width="24" className="folder" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M11 5h13v17h-24v-20h8l3 3zm-10-2v18h22v-15h-12.414l-3-3h-6.586z"/></svg>
-                            </a>
-                        </div>
-                        </div>
-                        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col">
-                    <div className="card h-100">
-                    <div className="card-body">
-                        <div className="card-title">
-                        <div className="card-title-wrapper">
-                            <p>Title</p>
-                            <a href="https://github.com/Ehren-Lewis/HobbySpot" target={"_blank"}>
-                            <svg width="24" className="folder" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M11 5h13v17h-24v-20h8l3 3zm-10-2v18h22v-15h-12.414l-3-3h-6.586z"/></svg>
-                            </a>
-                        </div>
-                        </div>
-                        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col">
-                    <div className="card h-100">
-                    <div className="card-body">
-                        <div className="card-title">
-                        <div className="card-title-wrapper">
-                            <p>Title</p>
-                            <a href="https://github.com/Ehren-Lewis/HobbySpot" target={"_blank"}>
-                            <svg width="24" className="folder" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M11 5h13v17h-24v-20h8l3 3zm-10-2v18h22v-15h-12.414l-3-3h-6.586z"/></svg>
-                            </a>
-                        </div>
-                        </div>
-                        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    </div>
-                </div>
-
-                <div className="col">
-                    <div className="card h-100">
-                    <div className="card-body">
-                        <div className="card-title">
-                        <div className="card-title-wrapper">
-                            <p>Title</p>
-                            <a href="https://github.com/Ehren-Lewis/HobbySpot" target={"_blank"}>
-                            <svg width="24" className="folder" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M11 5h13v17h-24v-20h8l3 3zm-10-2v18h22v-15h-12.414l-3-3h-6.586z"/></svg>
-                            </a>
-                        </div>
-                        </div>
-                        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                    </div>
-                </div> */}
    
             </div>
 
