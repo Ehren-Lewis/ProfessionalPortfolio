@@ -99,10 +99,14 @@ body {
     /* border: 1px solid teal; */
     border: 1px solid var(--earthy-orange);
     width:max-content;
+    word-wrap: break-all;
     padding: .5rem 1rem;
     font-size: 3rem;
-
+    object-fit: contain;
+    
   }
+
+  
 
 .intro {
   z-index: 1; 
@@ -215,6 +219,7 @@ body {
   border-bottom: 1px solid var(--earthy-orange);
   width:max-content;
   font-size: 2rem;
+  object-fit: contain;
 }
 
 .technology-list {
@@ -304,7 +309,8 @@ body {
   align-items: center;
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .footer a {

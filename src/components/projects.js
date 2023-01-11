@@ -32,7 +32,7 @@ const Projects = () => {
             </div>
         </div>
 
-
+{/* https://63be37258884bf0008c0a709--beamish-peony-760e55.netlify.app/ : Premium Machinery */}
 
 
         <div className="row text-light mb-5 d-flex">

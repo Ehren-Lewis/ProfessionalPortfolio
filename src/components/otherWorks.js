@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-import {Card } from "react-bootstrap";
-import axios from 'axios';
+
 import "./otherworks.css"
-import { faKrw } from "@fortawesome/free-solid-svg-icons";
 
 const OtherWorks = () => {
     const [windowWidth, setwindowWidth] = useState(window.innerWidth);
@@ -83,7 +81,7 @@ const OtherWorks = () => {
 
             <div className={windowWidth < 600 ? "row mb-5" : "row justify-content-center mb-5" }>
                 <div className="col-5">
-                    <p className="name text-light" style={{fontSize: windowWidth <  500 ? "2.5rem" : "3rem"}}>Other Works</p>
+                    <p className="name text-light" style={{fontSize: windowWidth <  600 ? "2.3rem" : "3rem"}}>Other Works</p>
                 </div>
             </div>
 
