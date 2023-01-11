@@ -1,0 +1,40 @@
+
+
+
+/* .other-works {
+    
+} */
+
+.card {
+    border: 1px solid #c16632;
+    /* border-color: #c16632; */
+    transition: .4s ease-in-out;
+    background-color: #382414;
+    color: white;
+    
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    /* box-shadow:0 .3rem .5rem rgba(255, 255, 255, .5); */
+    box-shadow:0 .3rem .5rem rgb(28, 27, 27);
+
+}
+
+.card-title-wrapper {
+    justify-content: space-around;
+    display: flex;
+}
+
+.folder {
+    fill: #c16632;
+}
+
+.folder:hover {
+    cursor: pointer;
+}
+
+/* .folder:hover {
+    fill: orange;
+    transform: translateY(-2px);
+} */
