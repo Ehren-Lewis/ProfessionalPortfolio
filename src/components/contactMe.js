@@ -40,6 +40,12 @@ const ContactForm =  () => {
         <div className="row">
             <div className="col-sm-12 col-md-6 mx-auto d-flex justify-content-center mb-3">
             <p className="name text-light text-center" style={{fontSize: windowWidth <  600 ? "2.5rem" : "3rem"}}>Reach out!</p>
+        </div>
+        </div>
+        <div className="row">
+        <div className='col-sm-12 col-md-6 mx-auto '>
+            <p className='text-light text-sm-center'>Whether it's a question about software development, wanting to work
+            on a project together, or employment opportunies, I am available and will respond!</p>
 
                 {/* <p className='text-light mx-auto project-name name' >!</p> */}
             </div>
