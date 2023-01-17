@@ -5,6 +5,10 @@ import "./otherworks.css"
 const OtherWorks = () => {
     const [windowWidth, setwindowWidth] = useState(window.innerWidth);
 
+    const setWidth = () => {
+        setwindowWidth(window.innerWidth)
+      }
+
     const otherWorksInfo = [
         {
             "name": "Hobby Spot",
@@ -18,12 +22,12 @@ const OtherWorks = () => {
             "description": "Static web appliation focused on design and mobile responsiveness.",
             "tech": ["Bootstrap", "React"]
         },
-        {
-            "name": "Deep Thoughts",
-            "link": "https://github.com/Ehren-Lewis/DeepThoughts",
-            "description": " Full-stack React thought board designed to allow users to post their thoughts without having to login.",
-            "tech": ["AWS", "DynamoDB", "React", "Heroku"],
-        },
+        // {
+        //     "name": "Deep Thoughts",
+        //     "link": "https://github.com/Ehren-Lewis/DeepThoughts",
+        //     "description": " Full-stack React thought board designed to allow users to post their thoughts without having to login.",
+        //     "tech": ["AWS", "DynamoDB", "React", "Heroku"],
+        // },
         {
             "name": "Trilogy API",
             "link": "https://github.com/Ehren-Lewis/TrilogySocialMediaAPI",
@@ -64,9 +68,7 @@ const OtherWorks = () => {
 
     ]
 
-    const setWidth = () => {
-      setwindowWidth(window.innerWidth)
-    }
+
   
     useEffect( () => {
       window.addEventListener('resize', setWidth)

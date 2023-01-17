@@ -59,6 +59,8 @@ const Projects = () => {
                 <img src={require("../images/connectKidEvents.png")} style={biggerImage} alt="Event page of ConnectKid" className="mx-auto d-block"  /> :
                 <img src={require("../images/connectKidEvents.png")} style={smallerImage} alt="Event page of ConnectKid" className="mx-auto d-block"  />
                 }
+                <figcaption className="text-sm text-center text-secondary">(Most Cbvomplex)</figcaption> 
+
             </div>
 
 
@@ -97,30 +99,30 @@ const Projects = () => {
 
 
             <div className="col-lg-12 col-xl-6 mx-auto">
-                <p className="project-name mx-auto">Hobby Spot</p>
+                <p className="project-name mx-auto" style={{fontSize: windowWidth < 550 ? '1.7rem': "2rem"}}>Precision Machinery</p>
                 <div className="row">
                     <div className="col-12">
                         <p className="text-center">
-                        &emsp;&emsp;Hobby Spot is a Discussion sight focused around allowing individuals to freely discuss
-                        Their hobbies as they please. It features a fully functional login system with User authentification,
-                        as well as using cookies to persist session information for the user. This project was a collaboration between <a href="https://github.com/SThevenot" className="links" target="_blank" rel="noreferrer">Sarah Thevenot</a>, <a href="https://github.com/vianvianc" className="links" target="_blank" rel="noreferrer"> Vian Charbonneau</a>,
-                        <a href="https://github.com/ConnerMart" className="links" target="_blank" rel="noreferrer"> Conner Martin</a>, 
-                        <a href="https://github.com/csundheimjr" className="links" target="_blank" rel="noreferrer"> Carl Sundheim</a>, <a href="https://github.com/trystan333" className="links" target="_blank" rel="noreferrer">Trystan Button</a>, and I.</p>
+                        &emsp;&emsp;Precision Machinery is a frontend website focused on design theory, mobile responsiveness,
+                        and emulation regarding the standard elements that the clients need in a given website. Built with React, Bootstrap,
+                        HTML5, CSS3, and deployed on Netlify</p>
                     </div>
                 </div>
+
                 <div className="row pb-5">
                     <div className="col-8 mx-auto d-flex justify-content-around">
-                        <Button className="btn btn-orange"  onClick={ () => {window.open("https://github.com/Ehren-Lewis/HobbySpot")}}>Repository</Button>
-                        <Button className="btn btn-orange" onClick={ () => {window.open("https://damp-reaches-02576.herokuapp.com")}}>Live Site</Button>
+                        <Button className="btn btn-orange"  onClick={ () => {window.open("https://github.com/Ehren-Lewis/precision-machinery")}}>Repository</Button>
+                        <Button className="btn btn-orange" onClick={ () => {window.open("https://beamish-peony-760e55.netlify.app/")}}>Live Site</Button>
                     </div>
                 </div>
             </div>
 
             <div className=" justify-content-center col-lg-12 col-xl-4">
                 { windowWidth > 550 ? 
-                <img src={require("../images/hobbySpotLanding.png")} style={biggerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block"  /> :
-                <img src={require("../images/hobbySpotLanding.png")} style={smallerImage} alt="Landing page of Hobby Spot" className="mx-auto d-block" />
+                <img src={require("../images/precisionmachinerylanding.png")} style={biggerImage} alt="Landing page of Precision Machinery" className="mx-auto d-block"  /> :
+                <img src={require("../images/precisionmachinerylanding.png")} style={smallerImage} alt="Landing page of Precision Machinery" className="mx-auto d-block" />
                 }
+                <figcaption className="text-sm text-center text-secondary">(Personal Favorite)</figcaption> 
             </div>
         </div>
 
