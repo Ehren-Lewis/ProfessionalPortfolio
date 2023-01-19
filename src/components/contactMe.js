@@ -26,7 +26,7 @@ const ContactForm =  () => {
         }
 
 
-        const response = await emailjs.send("service_z4n0gcu","template_747wh4q", templateParams, "4UDQw5DrveSXsqEHt");
+        await emailjs.send("service_z4n0gcu","template_747wh4q", templateParams, "4UDQw5DrveSXsqEHt");
 
         document.querySelector("#confirmation").textContent = "Email Sent!"
         
@@ -70,7 +70,7 @@ const ContactForm =  () => {
                 <small id="confirmation"></small>
                 </Form.Group>
                 <Form.Group>
-                    <Button type="submit" onClick={onSubmit} className="mt-3 btn-orange">Submit</Button>
+                    <Button type="submit" onClick={onSubmit} className="mt-3 button-orange">Submit</Button>
                 </Form.Group>
 
       

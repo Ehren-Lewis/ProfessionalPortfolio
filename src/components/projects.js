@@ -48,8 +48,8 @@ const Projects = () => {
             </div>
             <div className="row pb-5">
                 <div className="col-8 mx-auto d-flex justify-content-around">
-                    <Button className="btn btn-orange" onClick={ () => {window.open("https://github.com/Ehren-Lewis/ConnectKid")}}>Repository</Button>
-                    <Button className="btn btn-orange" onClick={ () => {window.open("https://hidden-spire-64432.herokuapp.com/")}}>Live Site</Button>
+                    <Button className="project-button" onClick={ () => {window.open("https://github.com/Ehren-Lewis/ConnectKid")}}>Repository</Button>
+                    <Button className="project-button" onClick={ () => {window.open("https://hidden-spire-64432.herokuapp.com/")}}>Live Site</Button>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@ const Projects = () => {
                 <img src={require("../images/connectKidEvents.png")} style={biggerImage} alt="Event page of ConnectKid" className="mx-auto d-block"  /> :
                 <img src={require("../images/connectKidEvents.png")} style={smallerImage} alt="Event page of ConnectKid" className="mx-auto d-block"  />
                 }
-                <figcaption className="text-sm text-center text-secondary">(Most Cbvomplex)</figcaption> 
+                {/* <figcaption className="text-sm text-center text-secondary">(Most Complex)</figcaption>  */}
 
             </div>
 
@@ -81,8 +81,8 @@ const Projects = () => {
                 </div>
                 <div className="row pb-5">
                 <div className="col-8 mx-auto d-flex justify-content-around">
-                    <Button className="btn btn-orange" onClick={ () => {window.open("https://github.com/Ehren-Lewis/DeepThoughts")}}>Repository</Button>
-                    <Button className="btn btn-orange" onClick={ () => {window.open("https://thawing-depths-74272.herokuapp.com/")}}>Live Site</Button>
+                    <Button className="project-button" onClick={ () => {window.open("https://github.com/Ehren-Lewis/DeepThoughts")}}>Repository</Button>
+                    <Button className="project-button" onClick={ () => {window.open("https://thawing-depths-74272.herokuapp.com/")}}>Live Site</Button>
                 </div>
             </div>
             </div>
@@ -111,8 +111,8 @@ const Projects = () => {
 
                 <div className="row pb-5">
                     <div className="col-8 mx-auto d-flex justify-content-around">
-                        <Button className="btn btn-orange"  onClick={ () => {window.open("https://github.com/Ehren-Lewis/precision-machinery")}}>Repository</Button>
-                        <Button className="btn btn-orange" onClick={ () => {window.open("https://beamish-peony-760e55.netlify.app/")}}>Live Site</Button>
+                        <Button className="project-button"  onClick={ () => {window.open("https://github.com/Ehren-Lewis/precision-machinery")}}>Repository</Button>
+                        <Button className="project-button" onClick={ () => {window.open("https://beamish-peony-760e55.netlify.app/")}}>Live Site</Button>
                     </div>
                 </div>
             </div>

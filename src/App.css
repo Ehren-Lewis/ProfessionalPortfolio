@@ -204,14 +204,20 @@ body {
   border-radius: 10px; */
 /* } */
 
-.btn-orange {
+.button-orange {
     background-color: var(--earthy-orange);
     border-color: var(--earthy-orange);
 }
 
-.btn-orange:hover {
+.button-orange:hover {
   background-color: #944e26;
   border-color: #944e26;
+}
+
+.button-orange:focus {
+  background-color: #944e26;
+  border-color: #944e26;
+  box-shadow: 0 0 0 0.2rem #944e26
 }
 
 .project-name {
@@ -376,4 +382,39 @@ body {
     .container {
       margin: 0;
     }
+  }
+
+  /* .project-button {
+    padding-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+} */
+
+.project-button {
+  text-decoration: none;
+  color: var(--cyber-grey);
+  background-color: transparent;
+  border: none;
+}
+
+.project-button::after {
+    content: '';
+    display: block;
+    width: 0%;
+    color: white;
+    height: 1px;
+    background: var(--earthy-orange);
+    transition: width .4s ease-in;          
+  }
+  
+.project-button:hover::after {
+    width: 100%;
+  }
+ .project-button:hover {
+    background-color: transparent;
+    border: none;
+    color: #ced1d7;
+    transition: .4s;
+    cursor: pointer;
   }
