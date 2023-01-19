@@ -220,6 +220,8 @@ body {
   box-shadow: 0 0 0 0.2rem #944e26
 }
 
+
+
 .project-name {
   font-family: 'Cyberpunk Is Not Dead', sans-serif; 
   border-bottom: 1px solid var(--earthy-orange);
@@ -405,7 +407,15 @@ body {
     color: white;
     height: 1px;
     background: var(--earthy-orange);
-    transition: width .4s ease-in;          
+    transition: width .4s ease-in;
+    /* background-color: transparent; */
+    border: none;          
+  }
+
+  .project-button:focus, .project-button:active {
+    box-shadow: 0 0 0 0 transparent !important;
+    background-color: transparent !important;
+    color: var(--cyber-grey)
   }
   
 .project-button:hover::after {
@@ -418,3 +428,5 @@ body {
     transition: .4s;
     cursor: pointer;
   }
+
+ 
