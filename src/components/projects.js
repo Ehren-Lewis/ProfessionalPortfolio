@@ -49,7 +49,7 @@ const Projects = () => {
             <div className="row pb-5">
                 <div className="col-8 mx-auto d-flex justify-content-around">
                     <Button className="project-button" onClick={ () => {window.open("https://github.com/Ehren-Lewis/ConnectKid")}}>Repository</Button>
-                    <Button className="project-button" onClick={ () => {window.open("https://hidden-spire-64432.herokuapp.com/")}}>Live Site</Button>
+                    <Button className="project-button" onClick={ () => {window.open("https://connect-kid.herokuapp.com/")}}>Live Site</Button>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@ const Projects = () => {
                 <div className="row pb-5">
                 <div className="col-8 mx-auto d-flex justify-content-around">
                     <Button className="project-button" onClick={ () => {window.open("https://github.com/Ehren-Lewis/DeepThoughts")}}>Repository</Button>
-                    <Button className="project-button" onClick={ () => {window.open("https://thawing-depths-74272.herokuapp.com/")}}>Live Site</Button>
+                    <Button className="project-button" onClick={ () => {window.open("https://deepthoughtsboard.herokuapp.com/")}}>Live Site</Button>
                 </div>
             </div>
             </div>
@@ -112,7 +112,7 @@ const Projects = () => {
                 <div className="row pb-5">
                     <div className="col-8 mx-auto d-flex justify-content-around">
                         <Button className="project-button"  onClick={ () => {window.open("https://github.com/Ehren-Lewis/precision-machinery")}}>Repository</Button>
-                        <Button className="project-button" onClick={ () => {window.open("https://beamish-peony-760e55.netlify.app/")}}>Live Site</Button>
+                        <Button className="project-button" onClick={ () => {window.open("https://main--premiummachinery.netlify.app/")}}>Live Site</Button>
                     </div>
                 </div>
             </div>
