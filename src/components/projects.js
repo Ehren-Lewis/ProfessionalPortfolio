@@ -112,7 +112,7 @@ const Projects = () => {
                 <div className="row pb-5">
                     <div className="col-8 mx-auto d-flex justify-content-around">
                         <Button className="project-button"  onClick={ () => {window.open("https://github.com/Ehren-Lewis/precision-machinery")}}>Repository</Button>
-                        <Button className="project-button" onClick={ () => {window.open("precisionmachinery.netlify.app")}}>Live Site</Button>
+                        <Button className="project-button" onClick={ () => {window.open("https://precisionmachinery.netlify.app")}}>Live Site</Button>
                     </div>
                 </div>
             </div>
